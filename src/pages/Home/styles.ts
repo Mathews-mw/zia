@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LoginContainer = styled.div`
+export const HomeContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -15,34 +15,9 @@ export const LoginContainer = styled.div`
     color: ${props => props.theme["orage-700"]}
   }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-  }
-
-  input {
-   padding: 0.4rem;
-   margin-bottom: 1rem;
-   border-radius: 6px;
-   border: 0.5px solid black;
-  }
-
-  input:focus {
-    border: 0;
-  }
-
-  input[type='number'] {
-    -moz-appearance:textfield;
-  }
-
-  input::-webkit-outer-spin-button,
-  input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-  }
-
-  button[type="submit"] {
+  button {
     height: 48px;
+    width: 120px;
     border: 0;
     background: ${props => props.theme["green-900"]};
     color: ${props => props.theme.white};
@@ -62,15 +37,5 @@ export const LoginContainer = styled.div`
       background: ${props => props.theme["green-700"]};
       transition: background-color 0.2s;
     }
-  }
-
-  a {
-    text-decoration: none;
-    color: ${props => props.theme["blue-500"]}
-  }
-
-  a:hover {
-    color: ${props => props.theme["blue-600"]};
-    transition: color 0.2s;
   }
 `;

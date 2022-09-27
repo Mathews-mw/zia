@@ -4,6 +4,7 @@ import * as zod from 'zod';
 import { useContext } from 'react';
 import { UserContext } from '../../contexts/UsersContext';
 import { Link } from 'react-router-dom';
+import { RegisterContainer, ToBack } from './styles';
 
 const registerFormSchema = zod.object({
   name: zod.string(),
@@ -40,11 +41,16 @@ export function Register() {
   };
 
   return (
-    <div>
-      <h1>Registro</h1>
+    <RegisterContainer>
+        <h1>Registrar</h1>
+      
+      <ToBack>
+        <Link to="/login" > Voltar </Link>
+      </ToBack>
+
       <form onSubmit={handleSubmit(handleRegister)}>
         <label htmlFor="name">Nome</label>
-        <input type="text" id="name" {...register('name')} />
+        <input type="text" id="name" autoFocus {...register('name')} />
 
         <label htmlFor="email">Email</label>
         <input type="email" id="email" {...register('email')} />
@@ -58,10 +64,9 @@ export function Register() {
         <label htmlFor="confirmPassword">Confirmar Senha</label>
         <input type="text" id="confirmPassword" {...register('confirmPassword')} />
 
-        <button type='submit'>Enviar</button>
+        <button type='submit'>Cadastrar</button>
       </form>
-
-      <Link to="/login" > Voltar </Link>
-    </div>
+      
+    </RegisterContainer>
   )
 }

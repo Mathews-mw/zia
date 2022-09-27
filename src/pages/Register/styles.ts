@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const LoginContainer = styled.div`
+export const RegisterContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,7 +31,7 @@ export const LoginContainer = styled.div`
   input:focus {
     border: 0;
   }
-
+  
   input[type='number'] {
     -moz-appearance:textfield;
   }
@@ -73,4 +73,11 @@ export const LoginContainer = styled.div`
     color: ${props => props.theme["blue-600"]};
     transition: color 0.2s;
   }
+`;
+
+export const ToBack = styled.div`
+  width: 100%;
+  display: flex;  
+  justify-content: end;
+  align-items: flex-start;
 `;

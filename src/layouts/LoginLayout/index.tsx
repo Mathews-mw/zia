@@ -34,7 +34,7 @@ export function LoginLayout() {
 
       <form onSubmit={handleSubmit(handleUserAuth)}>
         <label htmlFor="matricula"> Matrícula: </label>
-        <input type="number" id="matricula" required {...register('matricula')}/>
+        <input type="number" id="matricula" required autoFocus {...register('matricula')}/>
         <label htmlFor="password">Senha:</label>
         <input type="password" id="password" required {...register('password')} />
 

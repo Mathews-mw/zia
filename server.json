@@ -1,0 +1,44 @@
+{
+  "auths": [
+    {
+      "id": "0001",
+      "name": "admin",
+      "matricula": "2022123456",
+      "password": "admin123"
+    }
+  ],
+  "users": [
+    {
+      "name": "Mathews Araujo",
+      "email": "mathews.mw@gmail.com",
+      "matricula": "202108462047",
+      "password": "mw2490",
+      "confirmPassword": "mw2490",
+      "id": 1
+    },
+    {
+      "name": "admin",
+      "email": "admin.exemple@email.com",
+      "matricula": "20220033568",
+      "password": "superAdmin123",
+      "confirmPassword": "superAdmin123",
+      "id": 2
+    },
+    {
+      "name": "math",
+      "email": "araujo.p@smkservicos.com",
+      "matricula": "12312312412412",
+      "password": "12312312",
+      "confirmPassword": "asdasdas",
+      "id": 3
+    },
+    {
+      "name": "mat",
+      "email": "mathewf.nw@gmail.com",
+      "matricula": "12312312",
+      "password": "123",
+      "confirmPassword": "123",
+      "id": 4
+    }
+  ]
+}
